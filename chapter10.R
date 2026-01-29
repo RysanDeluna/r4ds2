@@ -60,11 +60,21 @@ ggplot(diamonds, aes(x = z)) +       # length
   geom_histogram(binwidth = 0.3) +
   coord_cartesian(xlim = c(2, 15))
 
-# Explore the distribution of price. Do you discover anything unusual or surprising? (Hint: Carefully think about the binwidth and make sure you try a wide range of values.)
+# A: Explore the distribution of price. Do you discover anything unusual or surprising? (Hint: Carefully think about the binwidth and make sure you try a wide range of values.)
 
 ggplot(diamonds, aes(x = price)) +
   geom_histogram(binwidth = 2) +
   coord_cartesian(xlim = c(1400, 1700))
+
+# R: Around the zoomed interval there is a gap on the data, meaning diamonds on
+#    that range of price were not found or registered. 
+
+# A: How many diamonds are 0.99 carat? How many are 1 carat? What do you think is the cause of the difference?
+
+
+
+
+
  
 
 
